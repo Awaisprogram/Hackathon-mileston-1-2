@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+  .abt{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media(max-width: 600px){
+  .links-container{
+      flex-direction: column;
+      position: fixed;
+      align-items: flex-start;
+      right: -100%;
+      top: 0;
+      width: 300px;
+      z-index: 10;
+      background: #000;
+      transition: 0.3s ease-in;
+  }
+  nav a{
+      padding: 20px;
+      text-align: center;
+      height: auto;
+      justify-content: flex-start;
+      width: 100%;
+  }
+  .open-sidebar-btn , .close-sidebar-btn{
+      display: block;
+     padding: 20px 30px;
+  } 
+  #sidebar-active:checked ~ .links-container{
+      right: 0;
+  }
+  .home-links{
+    display: none;
+  }
+  .content h1{
+    color: var(--primary-color);
+    font-size: 3em;
+  }
+}
