@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 
 :root {
@@ -18,8 +18,12 @@ html{
   scroll-behavior: smooth;
 }
 
+.second{
+  background: hsl(39, 77%, 83%);
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #222;
 }
 
@@ -46,9 +50,12 @@ nav{
 }
 .home-links{
   margin-right: auto;
+  margin-left: 20px;
   font-size: 1.5rem;
+  font-weight: 900;
   color: #c0392b;
 }
+
 nav a{
   color: white;
   padding: 20px;
@@ -118,14 +125,12 @@ nav i{
 .section{
   background: #000;
   padding: var(--section-padding);
-
-
 }
 
 .h1{
   color: #c0392b;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .abt{
@@ -154,16 +159,18 @@ nav i{
   object-fit: cover;
 }
 
+.education{
+  padding:30px;
+  background: white;
+}
 .institutions{
-  margin-top: 10%;
+  margin-top: 20px;
 }
 .education-section {
   padding: 2rem;
-  background-color: #fff;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .education-section h2 {
@@ -268,20 +275,12 @@ button {
   background-color: #c0392b;
   margin-top: 10px;
   font-size: 15px;
-  padding: 5px 10px;
+  padding: 10px;
+  margin-bottom: 40px;
   cursor: pointer;
 }
-.create{
-  text-align: center;
-  padding-top: 10px;
-  color: white;
-  font-size: 2rem;
 
-}
-.lis{
-  text-align: center;
-  font-size: 1rem;
-}
+
 .hidden{
   text-align: center;
 }
@@ -290,11 +289,10 @@ button {
 
 .work-experience {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #fff;
+  
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  
 }
 
 .work-experience h2 {
